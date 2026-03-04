@@ -1,1 +1,19 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2AGu9A8s)
+# Personal Portfolio Website - Milestone 1
+
+## Overview
+This is the first milestone project for my RevoU FullStack Software Engineer Bootcamp. It is a personal website designed to showcase my progress and portfolio.
+
+## Features Implemented
+- **Home Section:** Visual introduction and welcome message.
+- **About Me:** Biography including my education at Telkom University and my interest in Maimai/rhythm games.
+- **Technical Skills:** A semantic list of my core stack (Laravel, React, Next.js).
+- **Portfolio Section:** Showcasing Symptosense and EduSkill with descriptions and images.
+- **Contact Form:** A functional HTML form with validation and accessible labels.
+- **Semantic HTML:** Used tags like `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<figure>`.
+
+## Technologies Used
+- HTML5
+- CSS3 (Flexbox & Linear Gradients)
+
+## Access the website
+You can view the deployed website here: [Link](https://revou-fsse-feb26.github.io/milestone-1-Sayiki/)
