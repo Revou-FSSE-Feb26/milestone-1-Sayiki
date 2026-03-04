@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arzaq's Web Portofolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            padding: 15px 40px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+        }
+        .flex-item {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0; 
+        }
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+        .navbar-links ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar-links ul li {
+            margin-left: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <div class="flex-container">
+                    <p class="flex-item">
+                        Arzaq.
+                    </p>
+                        <div class="navbar-links">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main style="padding: 20px; font-family: sans-serif; margin: 20px;">
+            <section id="home" >
+                <h2>Welcome to My Portfolio</h2>
+                <p>This is the home section of my portfolio website.</p>
+            </section>
+            <hr>
+            <section id="about" >
+                <h2>About Me</h2>
+                <p style="margin-bottom: 10px;">Hi, I'm Arzaq Ajradika, a Software Engineering Fresh Graduate. I have experience in building web applications using modern technologies like Laravel, React, and Next.js.</p>
+                <p>Aside from coding, I enjoy manga, anime and testing my reflexes on Maimai at the arcade. You can often find me at the Timezone arcade in Margo City :D. Maimai is a rhythm game that I've been playing for years and it's one of my favorite games. It is as addictive as drugs, not that I've ever tried drugs though.</p>
+                <br>
+                <h2>Technical Skills:</h2>
+                <ul style="margin-left: 25px;">
+                    <li>Laravel</li>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>Node.js</li>
+                </ul>
+            </section>
+            <hr> 
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <p>This is the portfolio section where you can see my projects and work.</p>
+                <br>
+                <article>
+                    <h3>Project 1: Symptosense</h3>
+                    <p>A disease prediction web application built with Laravel Framework.</p>
+                    <figure>
+                        <img src="assets/image1.png" alt="Project 1 Screenshot" style="width:300px; height:auto;">
+                        <figcaption>Screenshot of Symptosense</figcaption>
+                    </figure>
+                </article>
+                <br>
+                <article>
+                    <h3>Project 2: EduSkill</h3>
+                    <p>A participant registration web application built with React Vite and Laravel.</p>
+                    <figure>
+                        <img src="assets/image2.png" alt="Project 2 Screenshot" style="width:300px; height:auto;">
+                        <figcaption>Screenshot of EduSkill</figcaption>
+                    </figure>
+                </article>
+            </section>
+            <hr>
+            <section id="contact">
+                <h2>Contact me</h2>
+                <form action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+    </main>
+    <footer style="background: linear-gradient(to right, #f8f9fa, #e9ecef); padding: 15px 40px; text-align: center; font-family: sans-serif;">
+        <p>&copy; 2026 Arzaq Ajradika. Made with HTML</p>
+    </footer>
+</body>
+</html>
