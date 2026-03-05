@@ -48,7 +48,13 @@
         .navbar-links ul li {
             margin-left: 20px;
         }
-        
+        h2 {
+            margin-bottom: 5px;
+        }
+        h3 {
+            margin-bottom: 2.5px;
+        }
+    
 
     </style>
 </head>
@@ -72,15 +78,15 @@
         </div>
     </header>
     <main style="padding: 20px; font-family: sans-serif; margin: 20px;">
-            <section id="home" >
+            <section id="home">
                 <h2>Welcome to My Portfolio</h2>
                 <p>This is the home section of my portfolio website.</p>
             </section>
             <hr>
             <section id="about" >
                 <h2>About Me</h2>
-                <p style="margin-bottom: 10px;">Hi, I'm Arzaq Ajradika, a Software Engineering Fresh Graduate from Telkom University. I have experience in building web applications using modern technologies like Laravel, React, and Next.js.</p>
-                <p>Aside from coding, I enjoy manga, anime and testing my reflexes on Maimai at the arcade. You can often find me at the Timezone arcade in Margo City :D. Maimai is a rhythm game that I've been playing for years and it's one of my favorite games. It is as addictive as drugs, not that I've ever tried drugs though.</p>
+                <p style="margin-bottom: 10px;">Hi, I'm Arzaq Ajradika, a Software Engineering Fresh Graduate from Telkom University. Currently, I'm unemployed looking for software engineering related jobs. I have experience in building web applications using modern technologies like Laravel, React, and Next.js. </p>
+                <p>Aside from coding, I enjoy manga, anime and testing my reflexes on Maimai at the arcade. You can often find me at the Timezone arcade in Margo City :D. Maimai is a rhythm game that I've been playing for months and it's one of my favorite games. It is as addictive as drugs, not that I've ever tried drugs though.</p>
                 <br>
                 <h2>Technical Skills:</h2>
                 <ul style="margin-left: 25px;">
@@ -91,8 +97,8 @@
                 </ul>
             </section>
             <hr> 
-            <section id="portfolio">
-                <h2>Portfolio</h2>
+            <section id="projects">
+                <h2>Projects</h2>
                 <p>This is the portfolio section where you can see my projects and work.</p>
                 <br>
                 <article>
@@ -117,14 +123,54 @@
             <section id="contact">
                 <h2>Contact me</h2>
                 <form action="#">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Your email"><br><br>
+
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                    <textarea id="message" name="message" placeholder="Your message" rows="4" cols="50"></textarea><br><br>
+
+                    <label for="reason">Reason for contact:</label><br>
+                    <select name="reason" id="reason">
+                        <option value="">Select a reason for contact</option>
+                        <option value="inquiry">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <label>Preferred contact method:</label><br>
+                    <input type="radio" name="prefer-contact" id="prefer-contact" value="email">
+                    <label for="prefer-contact">Email</label>
+                    <input type="radio" name="prefer-contact" id="prefer-contact" value="phone" checked>
+                    <label for="prefer-contact">Phone</label><br><br>
+
+                    <label for="upload-file">Upload File:</label><br>
+                    <input type="file" id="upload-file" name="upload-file"><br><br>
+
                     <input type="submit" value="Submit">
+
+                    
                 </form>
+            </section>
+            <hr>
+            <section>
+                <h2>Contact Information</h2>
+                <table border="1">
+                    <tr>
+                        <th>Name</th>
+                        <td>Arzaq Ajradika</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>arzaqajradika1@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Contact</th>
+                        <td>+62 81317130656</td>
+                    </tr>
+                </table>
             </section>
     </main>
     <footer style="background: linear-gradient(to right, #f8f9fa, #e9ecef); padding: 15px 40px; text-align: center; font-family: sans-serif;">

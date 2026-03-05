@@ -6,7 +6,7 @@ This is the first milestone project for my RevoU FullStack Software Engineer Boo
 ## Features Implemented
 - **Home Section:** Visual introduction and welcome message.
 - **About Me:** Biography about myself and interests.
-- **Technical Skills:** A semantic list of my core stack (Laravel, React, Next.js).
+- **Technical Skills:** A semantic list of tech skills.
 - **Portfolio Section:** Showcasing Symptosense and EduSkill with descriptions and images.
 - **Contact Form:** A functional HTML form with validation and accessible labels.
 - **Semantic HTML:** Used tags like `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<figure>`.
