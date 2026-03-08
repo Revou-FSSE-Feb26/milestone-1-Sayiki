@@ -9,7 +9,7 @@ This is the first milestone project for my RevoU FullStack Software Engineer Boo
 - **Technical Skills:** A semantic list of tech skills.
 - **Portfolio Section:** Showcasing Symptosense and EduSkill with descriptions and images.
 - **Contact Form:** A functional HTML form with validation and accessible labels.
-- **Cotact Information Table:** A table of my contact info.
+- **Contact Information Table:** A table of my contact info.
 - **Semantic HTML:** Used tags like `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<figure>`.
 
 ## Technologies Used
