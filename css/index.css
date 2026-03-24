@@ -1,0 +1,26 @@
+ 
+ article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    
+ }
+article:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
