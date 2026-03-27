@@ -13,6 +13,14 @@
 article:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.ts-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -24,3 +32,24 @@ td {
     border: 1px solid black;
     padding: 8px;
 }
+
+.typing-animation {
+    overflow: hidden; 
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: 
+        typing 3.5s steps(40, end) infinite alternate,
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    0%,10% { width: 0; }
+    70%,100% { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
