@@ -3,9 +3,8 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 22rem;
-  min-height: 200px;
+  width: 350px;
+  height: 250px;
   border-radius: 10px;
 }
 article:hover {
@@ -44,6 +43,12 @@ td {
   animation:
     typing 3.5s steps(40, end) infinite alternate,
     blink-caret 0.75s step-end infinite;
+}
+
+#portfolio article img {
+  width: 100%;
+  height: 150px;
+  object-position: center;
 }
 
 @media (max-width: 768px) {

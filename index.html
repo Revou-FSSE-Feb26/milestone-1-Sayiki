@@ -11,21 +11,17 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="flex flex-col font-sans-serif bg-gray-100">
-    <header class="relative sticky top-0 z-50 bg-gradient-to-r from-slate-300 to-slate-100">
-      <div >
+    <header
+      class="relative sticky top-0 z-50 bg-gradient-to-r from-slate-300 to-slate-100"
+    >
+      <div>
         <nav>
-          <div
-            class="flex flex-row justify-between items-center relative p-4"
-          >
+          <div class="flex flex-row justify-between items-center relative p-4">
             <p class="text-2xl font-bold tracking-widest ml-4">Arzaq.</p>
             <input type="checkbox" class="hidden peer" id="nav-btn" />
             <label
@@ -53,6 +49,11 @@
               <li
                 class="cursor-pointer hover:bg-gray-300 rounded-full px-5 py-1"
               >
+                <a href="#experience">Experience</a>
+              </li>
+              <li
+                class="cursor-pointer hover:bg-gray-300 rounded-full px-5 py-1"
+              >
                 <a href="#portfolio">Portfolio</a>
               </li>
               <li
@@ -67,21 +68,27 @@
     </header>
     <main class="">
       <!-- Home Section -->
+      <section id="home" class="scroll-mt-16">
       <div
-        id="home"
-        class="flex flex-col items-center justify-center text-center min-h-screen px-4 bg-[url('assets/background.jpg')] bg-cover bg-center relative opacity-90"
+        class="flex flex-col items-center justify-center text-center min-h-screen px-4 bg-[url('assets/background.jpg')] bg-cover bg-center relative"
       >
         <div class="relative z-10 text-white max-md:px-4">
-          <h1 class="text-4xl max-md:text-3xl font-extrabold tracking-tight mb-4">
+          <h1
+            class="text-4xl max-md:text-3xl font-extrabold tracking-tight mb-4"
+          >
             Hi, I'm Arzaq Ajradika
           </h1>
         </div>
         <div class="relative z-10 text-white max-md:px-4">
-          <h2 class="text-2xl max-md:text-xl font-medium tracking-wide typing-animation max-md:w-full">
+          <h2
+            class="text-2xl max-md:text-xl font-medium tracking-wide typing-animation max-md:w-full"
+          >
             Software Engineer
           </h2>
         </div>
-        <div class="relative z-10 flex flex-row flex-wrap justify-center gap-6 mt-8">
+        <div
+          class="relative z-10 flex flex-row flex-wrap justify-center gap-6 mt-8"
+        >
           <a
             href="https://github.com/Sayiki"
             target="_blank"
@@ -115,8 +122,9 @@
           </a>
         </div>
       </div>
+      </section>
       <section
-        class="flex flex-col container mx-auto items-center py-24 max-md:py-16 bg-slate-100 scroll-mt-24 md:pr-4 md:px-4"
+        class="flex flex-col container mx-auto items-center py-24 max-md:py-16 bg-slate-100 scroll-mt-16 md:pr-4 md:px-4"
         id="about"
       >
         <h2 class="font-bold text-center tracking-widest text-2xl">ABOUT ME</h2>
@@ -181,35 +189,50 @@
           </li>
         </ul>
       </section>
-      <section id="experience" class="bg-slate-50 py-24 max-md:py-16 px-4 sm:px-6 scroll-mt-24">
+      <section
+        id="experience"
+        class="bg-slate-50 py-24 max-md:py-16 px-4 sm:px-6 scroll-mt-16"
+      >
         <div class="w-full max-w-3xl mx-auto">
           <ol class="relative border-s border-slate-300 pl-3">
             <li class="mb-10 ms-4">
-              <div class="absolute w-3 h-3 bg-slate-500 rounded-full mt-1.5 -start-[7px] border border-slate-50"></div>
-              <time class="text-sm font-normal leading-none text-slate-600">February 2022</time>
-              <h3 class="text-lg font-semibold text-slate-900 my-2">Something</h3>
-              <p class="mb-4 text-base font-normal text-slate-700">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages.</p>
-              <a href="#" class="inline-flex items-center text-slate-700 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-900 focus:ring-2 focus:ring-slate-300 shadow-xs font-medium leading-5 rounded-lg text-sm px-4 py-2.5 focus:outline-none">
-                Learn more
-                <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
-              </a>
+              <div
+                class="absolute w-3 h-3 bg-slate-500 rounded-full mt-1.5 -start-[7px] border border-slate-50"
+              ></div>
+              <time class="text-sm font-normal leading-none text-slate-600"
+                >July 2024 - August 2024</time
+              >
+              <h3 class="text-lg font-semibold text-slate-900 my-2">
+                Frontend and Backend Developer
+              </h3>
+              <p class="mb-4 text-base font-normal text-slate-700">
+                Contributed to creating a website for managing data on tourist
+                attractions at BPODT Caldera Resort using Codeigniter framework.
+              </p>
             </li>
             <li class="mb-10 ms-4">
-              <div class="absolute w-3 h-3 bg-slate-500 rounded-full mt-1.5 -start-[7px] border border-slate-50"></div>
-              <time class="text-sm font-normal leading-none text-slate-600">March 2022</time>
-              <h3 class="text-lg font-semibold text-slate-900 my-2">Internship</h3>
-              <p class="text-base font-normal text-slate-700">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-            </li>
-            <li class="ms-4">
-              <div class="absolute w-3 h-3 bg-slate-500 rounded-full mt-1.5 -start-[7px] border border-slate-50"></div>
-              <time class="mb-1 text-sm font-normal leading-none text-slate-600">April 2022</time>
-              <h3 class="text-lg font-semibold text-slate-900 my-2">Job</h3>
-              <p class="text-base font-normal text-slate-700">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+              <div
+                class="absolute w-3 h-3 bg-slate-500 rounded-full mt-1.5 -start-[7px] border border-slate-50"
+              ></div>
+              <time class="text-sm font-normal leading-none text-slate-600"
+                >Feb 2024 - June 2024</time
+              >
+              <h3 class="text-lg font-semibold text-slate-900 my-2">
+                Backend Developer
+              </h3>
+              <p class="text-base font-normal text-slate-700">
+                Contributed to developing the backend system of Symptosense
+                (IoT-based patient monitoring app) using Laravel, improving
+                system reliability for real-time data handling.
+              </p>
             </li>
           </ol>
         </div>
       </section>
-      <section id="portfolio" class="bg-slate-100 py-24 max-md:py-16 scroll-mt-24">
+      <section
+        id="portfolio"
+        class="bg-slate-100 py-24 max-md:py-16 scroll-mt-16"
+      >
         <div class="flex justify-center items-center flex-col mb-4">
           <h2 class="text-center font-bold tracking-widest text-2xl">
             PROJECTS
@@ -220,9 +243,9 @@
           </p>
         </div>
         <div
-          class="grid grid-cols-2 max-md:grid-cols-1 gap-4 container mx-auto px-6 justify-items-center"
+          class="flex flex-row flex-wrap gap-6 justify-center items-center"
         >
-          <a href="#portfolio">
+          <!-- <a href="#portfolio"> -->
             <article
               class="bg-[#E4E5E9] p-4 rounded-xl shadow-md w-full max-w-sm"
             >
@@ -238,8 +261,8 @@
                 </figcaption>
               </figure>
             </article>
-          </a>
-          <a href="#portfolio">
+          <!-- </a> -->
+          <!-- <a href="#portfolio"> -->
             <article
               class="bg-[#E4E5E9] p-4 rounded-xl shadow-md w-full max-w-sm"
             >
@@ -255,11 +278,29 @@
                 </figcaption>
               </figure>
             </article>
-          </a>
+          <!-- </a> -->
+          <!-- <a href="#portfolio"> -->
+            <article
+              class="bg-[#E4E5E9] p-4 rounded-xl shadow-md w-full max-w-sm"
+            >
+              <h3 class="font-bold text-lg pb-2">Project 3: Caldera Insight</h3>
+              <figure>
+                <img
+                  src="assets/image3.png"
+                  alt="Project 3"
+                  class="w-full h-auto rounded-lg"
+                />
+                <figcaption class="mt-1 text-sm text-center">
+                  A tourist attraction data management web application built with
+                  Codeigniter.
+                </figcaption>
+              </figure>
+            </article>
+          <!-- </a> -->
         </div>
       </section>
       <section
-        class="flex flex-col items-center py-24 max-md:py-16 bg-slate-50 px-4 scroll-mt-24"
+        class="flex flex-col items-center py-24 max-md:py-16 bg-slate-50 px-4 scroll-mt-16"
         id="contact"
       >
         <div
@@ -394,7 +435,10 @@
           </form>
         </div>
       </section>
-      <section class="flex flex-col bg-slate-50 py-24 max-md:py-16 px-4 scroll-mt-24" id="contact-info">
+      <section
+        class="flex flex-col bg-slate-50 py-24 max-md:py-16 px-4 scroll-mt-16"
+        id="contact-info"
+      >
         <h2 class="text-center font-bold tracking-widest text-2xl">
           CONTACT INFO
         </h2>
@@ -414,72 +458,95 @@
         </table>
       </section>
     </main>
-    <footer class="flex flex-col p-16 max-md:p-8 bg-slate-100 gap-10"
-    >
-      <div class="flex flex-row max-md:flex-col justify-between items-top gap-10">
-          <div class="flex flex-col gap-4 justify-start items-start w-full max-w-sm">
-            <span class="text-2xl font-bold text-slate">Arzaq Ajradika</span>
-            <p class=" text-sm text-slate-500 flex justify-center">Software engineer crafting reliable, scalable products with modern web and cloud tooling.</p>
-            <div class="relative z-10 flex flex-row gap-4">
-              <a
-                href="https://github.com/Sayiki"
-                target="_blank"
-                class="text-slate-600 text-3xl transition-transform hover:scale-125 hover:text-gray-400"
-              >
-                <i class="devicon-github-original"></i>
-              </a>
+    <footer class="flex flex-col p-16 max-md:p-8 bg-slate-100 gap-10">
+      <div
+        class="flex flex-row max-md:flex-col justify-between items-top gap-10"
+      >
+        <div
+          class="flex flex-col gap-4 justify-start items-start w-full max-w-sm"
+        >
+          <span class="text-2xl font-bold text-slate">Arzaq Ajradika</span>
+          <p class="text-sm text-slate-500 flex justify-center">
+            Software engineer crafting reliable, scalable products with modern
+            web and cloud tooling.
+          </p>
+          <div class="relative z-10 flex flex-row gap-4">
+            <a
+              href="https://github.com/Sayiki"
+              target="_blank"
+              class="text-slate-600 text-3xl transition-transform hover:scale-125 hover:text-gray-400"
+            >
+              <i class="devicon-github-original"></i>
+            </a>
 
-              <a
-                href="https://www.linkedin.com/in/arzaq-ajradika-5a8715232/"
-                target="_blank"
-                class="text-slate-600 text-3xl transition-transform hover:scale-125 hover:text-blue-400"
-              >
-                <i class="devicon-linkedin-plain"></i>
-              </a>
+            <a
+              href="https://www.linkedin.com/in/arzaq-ajradika-5a8715232/"
+              target="_blank"
+              class="text-slate-600 text-3xl transition-transform hover:scale-125 hover:text-blue-400"
+            >
+              <i class="devicon-linkedin-plain"></i>
+            </a>
 
-              <a
-                href="https://wa.me/6281317130656"
-                target="_blank"
-                class="text-slate-600 text-3xl transition-transform hover:scale-125 hover:text-green-500"
-              >
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
+            <a
+              href="https://wa.me/6281317130656"
+              target="_blank"
+              class="text-slate-600 text-3xl transition-transform hover:scale-125 hover:text-green-500"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
 
-              <a
-                href="https://instagram.com/arzaqajradika"
-                target="_blank"
-                class="text-slate-600 text-3xl transition-transform hover:scale-125 hover:text-pink-500"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </div>
+            <a
+              href="https://instagram.com/arzaqajradika"
+              target="_blank"
+              class="text-slate-600 text-3xl transition-transform hover:scale-125 hover:text-pink-500"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </div>
-          <div class="flex flex-col justify-start items-start gap-2 w-full max-w-sm">
-            <span class="text-lg font-semibold">Quick Links</span>
-            <ul class="flex flex-col gap-2 mt-3 text-sm text-slate-500">
-              <li><a href="#home" class="hover:text-gray-400">Home</a></li>
-              <li><a href="#about" class="hover:text-gray-400">About</a></li>
-              <li><a href="#portfolio" class="hover:text-gray-400">Portfolio</a></li>
-              <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
-            </ul>
-          </div>
-          <div class="flex flex-col justify-start items-start gap-3 w-full max-w-sm">
-            <span class="text-lg font-semibold">Get in touch</span>
-            <p class="flex text-sm text-slate-500">Ready to collaborate on something meaningful? Let’s plan it together.</p>
-            <input type="button" value="Send me a message" class="flex justify-start bg-black font-semibold text-white py-2 px-4 rounded-full hover:bg-gray-800 cursor-pointer"/>
-            <div class="flex flex-row gap-2 items-center">
-              <span class="h-2 w-2 bg-green-400 rounded-full"></span>
-              <span class="text-xs text-green-400">Usually responds within 24 hours</span>
-            </div>
-            
+        </div>
+        <div
+          class="flex flex-col justify-start items-start gap-2 w-full max-w-sm"
+        >
+          <span class="text-lg font-semibold">Quick Links</span>
+          <ul class="flex flex-col gap-2 mt-3 text-sm text-slate-500">
+            <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#about" class="hover:text-gray-400">About</a></li>
+            <li>
+              <a href="#portfolio" class="hover:text-gray-400">Portfolio</a>
+            </li>
+            <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+          </ul>
+        </div>
+        <div
+          class="flex flex-col justify-start items-start gap-3 w-full max-w-sm"
+        >
+          <span class="text-lg font-semibold">Get in touch</span>
+          <p class="flex text-sm text-slate-500">
+            Ready to collaborate on something meaningful? Let’s plan it
+            together.
+          </p>
+          <input
+            type="button"
+            value="Send me a message"
+            class="flex justify-start bg-black font-semibold text-white py-2 px-4 rounded-full hover:bg-gray-800 cursor-pointer"
+          />
+          <div class="flex flex-row gap-2 items-center">
+            <span class="h-2 w-2 bg-green-400 rounded-full"></span>
+            <span class="text-xs text-green-400"
+              >Usually responds within 24 hours</span
+            >
           </div>
         </div>
       </div>
-      <div class="flex flex-row max-md:flex-col max-md:items-start max-md:gap-2 text-xs text-slate-600 justify-between items-center border-t border-slate-200 pt-6">
+      <div
+        class="flex flex-row max-md:flex-col max-md:items-start max-md:gap-2 text-xs text-slate-600 justify-between items-center border-t border-slate-200 pt-6"
+      >
         <span>&copy; 2026 Arzaq Ajradika. Crafted with care</span>
         <span>Made with ❤️ with HTML</span>
         <a href="#home">
-        <span class="cursor-pointer hover:text-gray-400">Professional portfolio ^</span>
+          <span class="cursor-pointer hover:text-gray-400"
+            >Professional portfolio ^</span
+          >
         </a>
       </div>
     </footer>
