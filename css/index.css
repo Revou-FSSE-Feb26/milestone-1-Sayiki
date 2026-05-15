@@ -25,6 +25,122 @@ html {
   scroll-behavior: smooth;
 }
 
+.project-swiper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 8px;
+  position: relative;
+  overflow: visible;
+}
+
+.project-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+#portfolio .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+  min-height: 330px;
+  padding: 28px;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+#portfolio .project-card figure {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#portfolio .project-card h3 {
+  width: 100%;
+  margin-bottom: 18px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+#portfolio .project-card figcaption {
+  margin-top: 0;
+  line-height: 1.45;
+}
+
+#portfolio .project-card:hover {
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.16);
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.project-swiper-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  min-height: 44px;
+  margin-top: 28px;
+}
+
+.project-swiper .swiper-button-next,
+.project-swiper .swiper-button-prev {
+  position: static;
+  flex: 0 0 40px;
+  margin: 0;
+  color: #0f172a;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-swiper .swiper-button-next:hover,
+.project-swiper .swiper-button-prev:hover {
+  background: #f8fafc;
+}
+
+.project-swiper .swiper-button-next::after,
+.project-swiper .swiper-button-prev::after {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.project-swiper .swiper-pagination-bullet {
+  background: #94a3b8 !important;
+  width: 10px;
+  height: 10px;
+}
+
+.project-swiper .swiper-pagination-bullet-active {
+  background: #0f172a !important;
+}
+
+.project-swiper .swiper-pagination {
+  position: static;
+  width: auto !important;
+  transform: none !important;
+}
+
+@media (max-width: 768px) {
+  #portfolio .project-card {
+    min-height: 300px;
+    padding: 22px;
+  }
+
+  .project-swiper .swiper-button-next,
+  .project-swiper .swiper-button-prev {
+    display: none;
+  }
+}
+
 .contact-table {
   border-collapse: separate;
   border-spacing: 0;
@@ -91,9 +207,10 @@ html {
     blink-caret 0.75s step-end infinite;
 }
 
-#portfolio article img {
+#portfolio .project-card img {
   width: 100%;
-  height: 150px;
+  height: 170px;
+  object-fit: cover;
   object-position: center;
 }
 

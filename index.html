@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arzaq's Web Portofolio</title>
-    <link href="css/index.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
@@ -13,6 +12,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link href="css/index.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="flex flex-col font-sans-serif bg-gray-100">
@@ -257,9 +261,9 @@
       </section>
       <section
         id="portfolio"
-        class="bg-slate-100 py-24 max-md:py-16 scroll-mt-16"
+        class="bg-slate-100 py-24 px-4 max-md:py-16 scroll-mt-16"
       >
-        <div class="flex justify-center items-center flex-col mb-4">
+        <div class="flex justify-center items-center flex-col mb-10">
           <h2 class="text-center font-bold tracking-widest text-2xl">
             PROJECTS
           </h2>
@@ -268,59 +272,79 @@
             work.
           </p>
         </div>
-        <div class="flex flex-row flex-wrap gap-6 justify-center items-center">
-          <!-- <a href="#portfolio"> -->
-          <article
-            class="bg-[#E4E5E9] p-4 rounded-xl shadow-md w-full max-w-sm"
-          >
-            <h3 class="font-bold text-lg pb-2">Project 1: Symptosense</h3>
-            <figure>
-              <img
-                src="assets/image1.png"
-                alt="Project 1"
-                class="w-full h-auto rounded-lg"
-              />
-              <figcaption class="mt-1 text-sm text-center">
-                A disease prediction web application built with Laravel.
-              </figcaption>
-            </figure>
-          </article>
-          <!-- </a> -->
-          <!-- <a href="#portfolio"> -->
-          <article
-            class="bg-[#E4E5E9] p-4 rounded-xl shadow-md w-full max-w-sm"
-          >
-            <h3 class="font-bold text-lg pb-2">Project 2: EduSkill</h3>
-            <figure>
-              <img
-                src="assets/image2.png"
-                alt="Project 2"
-                class="w-full h-auto rounded-lg"
-              />
-              <figcaption class="mt-1 text-sm text-center">
-                A participant registration web application built with React.
-              </figcaption>
-            </figure>
-          </article>
-          <!-- </a> -->
-          <!-- <a href="#portfolio"> -->
-          <article
-            class="bg-[#E4E5E9] p-4 rounded-xl shadow-md w-full max-w-sm"
-          >
-            <h3 class="font-bold text-lg pb-2">Project 3: Caldera Insight</h3>
-            <figure>
-              <img
-                src="assets/image3.png"
-                alt="Project 3"
-                class="w-full h-auto rounded-lg"
-              />
-              <figcaption class="mt-1 text-sm text-center">
-                A tourist attraction data management web application built with
-                Codeigniter.
-              </figcaption>
-            </figure>
-          </article>
-          <!-- </a> -->
+        <div class="project-swiper swiper">
+          <div class="swiper-wrapper">
+            <article
+              class="project-card bg-[#E4E5E9] rounded-xl shadow-md swiper-slide"
+            >
+              <h3 class="font-bold text-lg pb-2">Project 1: Symptosense</h3>
+              <figure>
+                <img
+                  src="assets/image1.png"
+                  alt="Project 1"
+                  class="w-full h-auto rounded-lg"
+                />
+                <figcaption class="mt-1 text-sm text-center">
+                  A disease prediction web application built with Laravel.
+                </figcaption>
+              </figure>
+            </article>
+            <article
+              class="project-card bg-[#E4E5E9] rounded-xl shadow-md swiper-slide"
+            >
+              <h3 class="font-bold text-lg pb-2">Project 2: EduSkill</h3>
+              <figure>
+                <img
+                  src="assets/image2.png"
+                  alt="Project 2"
+                  class="w-full h-auto rounded-lg"
+                />
+                <figcaption class="mt-1 text-sm text-center">
+                  A participant registration web application built with React.
+                </figcaption>
+              </figure>
+            </article>
+            <article
+              class="project-card bg-[#E4E5E9] rounded-xl shadow-md swiper-slide"
+            >
+              <h3 class="font-bold text-lg pb-2">Project 3: Caldera Insight</h3>
+              <figure>
+                <img
+                  src="assets/image3.png"
+                  alt="Project 3"
+                  class="w-full h-auto rounded-lg"
+                />
+                <figcaption class="mt-1 text-sm text-center">
+                  A tourist attraction data management web application built
+                  with Codeigniter.
+                </figcaption>
+              </figure>
+            </article>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://revofun.site"
+              class="project-card bg-[#E4E5E9] rounded-xl shadow-md swiper-slide"
+            >
+              <h3 class="font-bold text-lg pb-2">Project 4: REVOFUN</h3>
+              <figure>
+                <img
+                  src="assets/image4.png"
+                  alt="Project 4"
+                  class="w-full h-auto rounded-lg"
+                />
+                <figcaption class="mt-1 text-sm text-center">
+                  A web application for playing website games built with
+                  Javascript and HTML.
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="project-swiper-controls">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </section>
       <section
@@ -585,5 +609,7 @@
         </a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
