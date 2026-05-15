@@ -109,24 +109,24 @@ html {
 
 .project-swiper .swiper-button-next::after,
 .project-swiper .swiper-button-prev::after {
-  font-size: 20px !important;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .project-swiper .swiper-pagination-bullet {
-  background: #94a3b8 !important;
+  background: #94a3b8;
   width: 10px;
   height: 10px;
 }
 
 .project-swiper .swiper-pagination-bullet-active {
-  background: #0f172a !important;
+  background: #0f172a;
 }
 
 .project-swiper .swiper-pagination {
   position: static;
-  width: auto !important;
-  transform: none !important;
+  width: auto;
+  transform: none;
 }
 
 @media (max-width: 768px) {
